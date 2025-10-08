@@ -61,6 +61,7 @@ export function SpinningText({
     ...BASE_TRANSITION,
     ...transition,
     duration: (transition as { duration?: number })?.duration ?? duration,
+    ease: "linear" as const,
   };
 
   const containerVariants = {

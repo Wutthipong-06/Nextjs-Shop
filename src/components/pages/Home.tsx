@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CheckCircle, Star, Users, Zap, Shield } from "lucide-react";
+import { ArrowRight, Users, Zap, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AuroraText } from "@/components/magicui/aurora-text";
