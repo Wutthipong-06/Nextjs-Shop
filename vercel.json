@@ -3,10 +3,5 @@
   "outputDirectory": ".next",
   "framework": "nextjs",
   "installCommand": "bun install",
-  "devCommand": "bun run dev",
-  "functions": {
-    "app/**/*.tsx": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "devCommand": "bun run dev"
 }
