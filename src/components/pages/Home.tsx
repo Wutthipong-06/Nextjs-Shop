@@ -1,19 +1,18 @@
-"use client";
 
 import { ArrowRight, Users, Zap, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-neutral-950 from-background to-muted pt-20">
-
       {/* Hero Section */}
       <section className="relative py-20 px-4 text-center">
         <div className="max-w-6xl mx-auto">
-          <Badge variant="outline" className="thai-text mb-4 text-sm text-neutral-500 hover:text-neutral-300 duration-300 ease-in-out">
+          <Badge variant="outline" className="thai-text mb-4 text-sm text-neutral-500 hover:scale-105 hover:text-neutral-300 duration-300 transition-all">
             Coming Soon...
           </Badge>
           <h1 className="thai-text text-muted-foreground text-5xl md:text-7xl font-bold tracking-tight mb-6 p-2">
@@ -40,7 +39,7 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
               <CardHeader>
                 <div className="mx-auto w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="h-6 w-6 text-primary" />
@@ -57,7 +56,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
               <CardHeader>
                 <div className="mx-auto w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="h-6 w-6 text-primary" />
@@ -74,7 +73,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-lg transition-shadow">
+            <Card className="text-center hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
               <CardHeader>
                 <div className="mx-auto w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
@@ -101,10 +100,12 @@ export default function Home() {
           <p className="thai-text text-xl mb-8 opacity-90">
             เริ่มต้นการช้อปปิ้งออนไลน์ด้วยความมั่นใจว่าข้อมูลและการทำธุรกรรมของคุณปลอดภัย
           </p>
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
-            Contact Us
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-6 text-neutral-600 hover:text-white hover:scale-105 duration-300 ease-in-out">
+              Contact US
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

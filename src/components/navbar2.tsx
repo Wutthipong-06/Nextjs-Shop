@@ -28,7 +28,9 @@ export function NavbarV2() {
             <div className="flex w-full items-center max-w-6xl mx-auto">
                 <div className="flex w-full md:w-1/3">
                     <div className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6 rounded-xl border-2 border-neutral-300 dark:border-neutral-700 gap-2">
-                        <p className="p-1 m-1 text-neutral-500 hover:text-neutral-300 duration-300 ease-in-out">V1</p>
+                        <p className="p-1 m-1 text-neutral-500 hover:text-neutral-300 duration-300 ease-in-out">
+                            <Link href="/">ShopV1</Link>
+                        </p>
                     </div>
                 <ul className="hidden gap-6 text-sm font-medium md:flex md:items-center">
                     {nav_Items.map((item) => (
