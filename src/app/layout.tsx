@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
       >
         <ThemeProvider
             attribute="class"
@@ -38,11 +38,13 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        <DockDemo/>
-        {/* <NavbarV2/> */}
-        {children}
-        <Footer/>
-        </ThemeProvider> 
+          <DockDemo />
+          {/* <NavbarV2/> */}
+          <main className="flex-1 w-full max-w-6xl mx-auto px-2 sm:px-4 md:px-8 lg:px-12 xl:px-0">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

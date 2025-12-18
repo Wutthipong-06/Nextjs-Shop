@@ -95,10 +95,10 @@ const DATA = {
 
 export function DockDemo() {
   return (
-  <div>
-    <div className="fixed z-50 flex left-1/2 -translate-x-1/2 flex-col items-center justify-center">
-      <TooltipProvider>
-        <Dock direction="middle">
+    <div className="w-full">
+      <div className="fixed z-50 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center w-full px-2 sm:px-4 md:px-8">
+        <TooltipProvider>
+          <Dock direction="middle" className="flex w-full max-w-md items-center justify-center gap-2 rounded-2xl border border-neutral-800 bg-background/80 p-2 shadow-lg backdrop-blur-lg">
           {DATA.navbar.map((item) => (
             <DockIcon key={item.label}>
               <Tooltip>

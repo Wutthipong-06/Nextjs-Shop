@@ -6,6 +6,22 @@ html, body {
   transition: background 0.4s, color 0.4s;
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.thai-text {
+  word-break: break-word;
+  font-size: 1rem;
+}
+
 
 @custom-variant dark (&:is(.dark *));
 
