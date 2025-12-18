@@ -39,7 +39,11 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<<<<<<< HEAD
             <Card className="text-center hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+=======
+            <Card className="text-center hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out">
+>>>>>>> 7a9378a9a2321151819a36d927723c8c3169ba0f
               <CardHeader>
                 <div className="mx-auto w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="h-6 w-6 text-primary" />
@@ -56,7 +60,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
+<<<<<<< HEAD
             <Card className="text-center hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+=======
+            <Card className="text-center hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out">
+>>>>>>> 7a9378a9a2321151819a36d927723c8c3169ba0f
               <CardHeader>
                 <div className="mx-auto w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="h-6 w-6 text-primary" />
@@ -73,7 +81,11 @@ export default function Home() {
               </CardContent>
             </Card>
 
+<<<<<<< HEAD
             <Card className="text-center hover:shadow-lg hover:scale-105 duration-300 ease-in-out">
+=======
+            <Card className="text-center hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out">
+>>>>>>> 7a9378a9a2321151819a36d927723c8c3169ba0f
               <CardHeader>
                 <div className="mx-auto w-12 h-12 bg-neutral-900 rounded-lg flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
@@ -100,12 +112,19 @@ export default function Home() {
           <p className="thai-text text-xl mb-8 opacity-90">
             เริ่มต้นการช้อปปิ้งออนไลน์ด้วยความมั่นใจว่าข้อมูลและการทำธุรกรรมของคุณปลอดภัย
           </p>
+<<<<<<< HEAD
           <Link href="/contact">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6 text-neutral-600 hover:text-white hover:scale-105 duration-300 ease-in-out">
               Contact US
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
+=======
+          <Button size="lg" variant="secondary" className="text-lg px-8 py-6 hover:scale-105 transition-all duration-300 ease-in-out">
+            Contact Us
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+>>>>>>> 7a9378a9a2321151819a36d927723c8c3169ba0f
         </div>
       </section>
     </div>
