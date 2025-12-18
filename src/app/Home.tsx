@@ -47,7 +47,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="thai-text text-4xl font-bold mb-4">พร้อมมาเป็นส่วนหนึ่งกับเราแล้วหรือยัง?</h2>
           <p className="thai-text text-xl mb-8 opacity-90">
-            เริ่มต้นการช้อปปิ้งออนไลน์ด้วยความมั่นใจว่าข้อมูลและการทำธุรกรรมของคุณปลอดภัย
+            เริ่มต้นการช้อปปิ้งออนไลน์ด้วยความมั่นใจว่าข้อมูลและการทำธุรกรรมของคุณปลอดภัยกับเรา
           </p>
           <Link href="/contact">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6 hover:scale-105 transition-all duration-300 ease-in-out">
