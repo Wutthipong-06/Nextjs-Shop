@@ -1,5 +1,10 @@
 @import "tailwindcss";
+
 @import "tw-animate-css";
+
+html, body {
+  transition: background 0.4s, color 0.4s;
+}
 
 
 @custom-variant dark (&:is(.dark *));

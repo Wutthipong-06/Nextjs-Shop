@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarIcon, HomeIcon, MailIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, Facebook, Instagram,  } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -64,7 +64,7 @@ const Icons = {
 
 const DATA = {
   navbar: [
-    { href: "#", icon: HomeIcon, label: "Home" },
+    { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "#", icon: PencilIcon, label: "Blog" },
   ],
   contact: {
@@ -96,7 +96,7 @@ const DATA = {
 export function DockDemo() {
   return (
   <div>
-    <div className="flex flex-col items-center justify-center">
+    <div className="fixed z-50 flex left-1/2 -translate-x-1/2 flex-col items-center justify-center">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (
